@@ -13,5 +13,13 @@ parameters {
 		steps{
       echo "build successfully"
     }
+		stage("Test"){
+		steps{
+      echo "tested successfully"
+    }
+			stage("deploy"){
+		steps{
+      echo "deploy successfully"
+    }
 }
 }
