@@ -17,12 +17,14 @@ parameters {
 	}
 		stage("Test"){
 		steps{
+			
       echo "tested successfully"
     }
 		}
 			stage("deploy"){
 		steps{
       echo "deploy successfully"
+			echo "LOB ${params.LOB}"
     }
 }
 }
